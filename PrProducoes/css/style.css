@@ -1,0 +1,482 @@
+/*RESET / GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.noSelect { 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 26px;
+    margin-left: 60px;
+    font-weight: 700;
+    
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header li + li{
+    margin: 0 30px;
+}
+
+header li a{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+}
+header li a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.single a{
+    border-radius: 5px;
+    background-color: #000e45 ;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+.single a:hover{
+    text-decoration: none;
+    background: #143ee0;
+}
+@media (max-width:700px){
+    header{
+        align-items: center;
+    }
+    .logo a{
+        font-size: 30px;
+        float: left
+    }
+}
+@media (max-width:400px){
+
+    .logo a{
+        font-size: 20px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .chamada h2{
+        font-size: 35px !important;
+    }
+}
+/*BANNER*/
+.banner{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../img/img5.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 20px;
+}
+.banner h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+.banner p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.btn{
+    margin-top: 30px;
+}
+.btn a{
+    color: #fff;
+    padding: 20px 40px;
+    background-color: #000e45;
+    border-radius: 10px;
+}
+.btn a:hover{
+    color: #fff;
+    background: #143ee0; 
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*CONHEÇA*/
+.conheca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 60px;
+}
+.conheca h3{
+    color: #000e45;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.conheca p{
+    color: #000e45;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.conheca hr{
+    margin-bottom: 30px;
+    width: 200px;
+    border: 1px solid #000e45;
+}
+.conheca .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.grid li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.small{
+    flex-basis: 40%;
+}
+.large{
+    flex-basis: 60%;
+}
+@media(max-width:750px){
+    .small, .large{
+        flex-basis: 100%;
+    }
+}
+@media (max-width:400px){
+    .servico h3{
+        font-size: 30px !important;
+    }
+    .serv{
+        font-size: 15px !important;
+        width: 200% !important;
+    }
+    .icons {
+        margin-top: -10px;
+        width: 200%;
+    }
+    #ct {
+        font-size: 35px;
+        width: 200%;
+    }
+    form{
+        width: 200% !important;
+    }
+    .contato p{
+        font-size: 35px !important;
+    }
+    .social img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+/*SERVIÇOS*/
+.servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0px 100px;
+    background-color: #000e45;
+}
+.servico h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.servico p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.servico hr{
+    margin-bottom: 30px;
+    width: 200px;
+    border: 1px solid #fff;
+}
+.servico .grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.servico .grid li{
+    flex: 1 1 200px;
+}
+.servico .grid img{
+    height: 500px;
+    width: 300px;
+    height: 
+}
+.servico .grid i{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.servico .grid h2{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.servico .grid p{
+    font-size: 15px;
+}
+/*CADASTRO*/
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 100px;
+    background-color: #fff;
+}
+.cadastro h3{
+    color: #000e45;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.cadastro hr{
+    margin-bottom: 30px;
+    width: 200px;
+    border: 1px solid #000e45;
+}
+
+form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+form input{
+    width: 80%;
+    padding: 10px 15px;
+    border: 1px solid #000e45;
+    border-radius: 5px;
+    margin-right: 15px;
+    flex-grow: 1
+}
+form button{
+    text-transform: uppercase;
+    width: 20%;
+    border: none;
+    padding: 15px;
+    background-color: #000e45;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover{
+    color: #fff;
+    font-weight: 700;
+    background: #143ee0;
+    text-decoration: underline;
+}
+@media (max-width:750px){
+    form{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    form input{
+        width: 100%;
+    }
+    form button{
+        margin-top: 10px;
+        width: 80%;   
+    }
+}
+.contato{
+    margin-top: 20px;
+}
+.contato p{
+    color: #000e45;
+    font-size: 40px;
+}
+.social img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*FOOTER*/
+footer{
+    text-align: center;
+    color: #fff;
+    background-color: #000e45;
+}
+footer p{
+    font-size: 12px;
+}
+footer i{
+    color: #fff;
+    font-size: 24px;
+}
+.fa-twitter-square:hover{
+    color: deepskyblue;
+}
+.fa-github-square:hover{
+    color:#000;
+}
+
+/*BACK TO TOP BUTTON*/
+.backtop{
+    height: 40px;
+    width: 40px;
+    background: #000e45;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    float: right;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+}
+.backtop:hover{
+    background: #143ee0;
+}
+.backtop i{
+    font-size: 36px;
+}
+.backtop.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*MENU MOBILE*/
+@media(max-width: 800px){
+.mobile-btn{
+    display: block;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-top: 4px solid;
+    margin: 20px 20px 0 0;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    -webkit-backface-visibility:hidden;
+}
+.mobile-btn::before, .mobile-btn::after{
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background-color: currentColor;
+    transition: transform .2s ease;
+}
+.mobile-btn.show{
+    border-top-color: transparent;
+}
+.mobile-btn.show::after{
+    margin-top: -3px;
+    top: 2px;
+    transform: rotate(45deg);
+}
+.mobile-btn.show::before{
+    margin-top: 3px;
+    top: 6px;
+    transform: rotate(135deg);
+}
+.menu-nav.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #000e45;
+    padding: 10px;
+    top: 100px;
+    right:0px;
+    transform: translate3d(0px, 0px, 0px);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-nav.mobile-menu.show{
+    opacity: 0.7;
+    visibility: visible;
+    transform: translate3d(0,0,0);
+        
+}    
+.menu-nav.mobile-menu li {
+    display: block;
+    border-bottom: 2px solid;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+}
+.menu-nav.mobile-menu li a{
+    text-align: center;
+    width: 100%;
+}
+.single a{
+    padding: none;
+    color: #fff;
+    text-decoration: underline;
+    border-radius: none;
+    background: none;
+}
+.single a:hover{
+    text-decoration: none;
+    background: none;
+}
+.menu-nav.mobile-menu li:hover{
+    background: #143ee0;
+}
