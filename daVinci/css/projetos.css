@@ -1,0 +1,212 @@
+/*Reset - Geral - noSelect*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html body{
+    height: 100%;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.noSelect { 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+/*Header*/
+.lateralMenu{
+    background: #000;
+    z-index: 10000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10%;
+    max-width: 100%;
+    height: 100%;
+}
+.lateralMenu a{
+    color: #919090;
+    font-size: 0.8em;
+}
+.lateralMenu i{
+    color: #919090;;
+    width: 100%;
+    font-size: 36px;
+    padding-top: 40px;
+}
+.lateralMenu i:hover{
+    color: #ccc;
+}
+@media(max-width:555px){
+    .lateralMenu{
+        width: 10%; 
+    }
+    .lateralMenu i{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .lateralMenu a{
+        font-size: 0.55em;
+    }
+}
+@media(max-width:380px){
+    .lateralMenu i{
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    .lateralMenu a{
+        font-size: 0.4em;
+    }
+}
+/*SOBRE*/
+body{
+    background: #292928;
+}
+.projetos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 50px;
+    font-size: 0.9em;
+}
+.projetos img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: auto;
+    border-radius: 10px;
+}
+.projetoCard{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15%;
+    align-content: center;
+}
+.reverse{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.projetoText, .projetotextReverse{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    text-align: justify;
+    flex-direction: column;
+    color: #fff;
+}
+.projetoText h2, .projetotextReverse h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.projetoText{
+    padding-left: 20px;
+}
+.projetotextReverse{
+    padding-right: 20px;
+
+}
+.projetoText audio , .projetotextReverse audio{
+    padding: 10px;
+    margin: 0 auto;
+}
+
+@media(max-width:1070px){
+    .projetos{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 0.9em;
+        margin-left: 2%;
+        margin: 0 auto;
+    }
+
+    .projetos img{
+        width: 100%;
+        height: auto;
+        max-width: auto;
+        max-height: auto;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .projetoCard{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 15%;
+        margin-right: 5%;
+        align-content: center;
+    }
+    .reverse{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 15%;
+        align-content: center;
+    }
+    .projetoText, .projetotextReverse{
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        text-align: justify;
+        flex-direction: column;
+        color: #fff;
+    }
+    .projetoText h2, .projetotextReverse h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .projetoText{
+        padding-left: 0;
+    }
+    .projetotextReverse{
+        padding-right: 0;
+    }
+}
+@media(max-width:500px){
+    .projetoText h2, .projetotextReverse h2{
+        font-size: 20px;
+    }
+    .projetoText p, .projetotextReverse p{
+        padding-left: 10px;
+    }
+    .projetos img{
+        width: 100%;
+        height: auto;
+        max-width: 230px;
+        max-height: auto;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .projetoText audio , .projetotextReverse audio{
+        width: 80%;
+    }
+}

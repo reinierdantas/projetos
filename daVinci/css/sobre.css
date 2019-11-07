@@ -1,0 +1,172 @@
+/*Reset - Geral - noSelect*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html body{
+    height: 100%;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.noSelect { 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+/*Header*/
+.lateralMenu{
+    background: #000;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10%;
+    max-width: 100%;
+    height: 100%;
+}
+.lateralMenu a{
+    color: #919090;
+    font-size: 0.8em;
+}
+.lateralMenu i{
+    color: #919090;;
+    width: 100%;
+    font-size: 36px;
+    padding-top: 40px;
+}
+.lateralMenu i:hover{
+    color: #ccc;
+}
+@media(max-width:555px){
+    .lateralMenu{
+        width: 10%; 
+    }
+    .lateralMenu i{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .lateralMenu a{
+        font-size: 0.55em;
+    }
+}
+@media(max-width:380px){
+    .lateralMenu i{
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    .lateralMenu a{
+        font-size: 0.4em;
+    }
+}
+/*SOBRE*/
+body{
+    background: #292928;
+}
+.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  #292928;
+    height: 1000px;
+    max-height: 100%;
+  
+}
+.sobre > img{
+    margin-left: 10%;
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+}
+.sobreText{
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    background-size: cover;
+    background-position: center center;
+    color:#ffffff;
+    padding: 10px;
+    padding-top: 50px;
+}
+.sobreText h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobreText p{
+    padding: 10px 5px 40px 5px;
+    line-height: 35px;
+    font-weight: 700;
+}
+.sobreAudio{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px 0;
+}
+@media(max-width:1070px){
+    .sobre > img{
+        width: 90%;
+    
+    }
+    .sobreText{
+        margin-left: 10%;
+      
+        width: 90%;
+    }
+    .sobreText p{
+        padding: 10px 5px 40px 5px;
+        line-height: 25px;
+        font-size: 300;
+    }
+    
+}
+@media(max-width:600px){
+    .sobreText{
+        margin-left: 10%;
+        border-radius: 0px 0px 50px 50px;
+        width: 90%;
+    }
+    .sobreText p{
+        padding: 10px 5px 40px 5px;
+        line-height: 25px;
+        text-align: justify;
+        font-size: 1em;
+    }
+    .sobreText h2{
+        font-size: 2em;
+        padding: 10px 0;
+    }
+
+}
+@media(max-width:380px){
+    .sobreAudio{
+        width: 90%;
+    }
+    .sobreText{
+        margin-left: 10%;
+        width: 100%;
+        background-size: contain 100%;
+    }
+    .sobreText p{
+        padding: 10px 5px 40px 5px;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .sobre > img{
+        width: 90%;
+    }
+   
+}
